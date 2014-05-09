@@ -51,6 +51,8 @@ public class Sudoku extends Activity implements OnClickListener{
 		Music.stop(this);
 	}
 	
+	
+	// item의 종류?
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()){
@@ -65,7 +67,7 @@ public class Sudoku extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.about_button:
-			Intent i = new Intent(this, About.class);
+			Intent i = new Intent(Sudoku.this, About.class);
 			startActivity(i);
 			break;
 		case R.id.new_button:

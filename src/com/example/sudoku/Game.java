@@ -12,7 +12,6 @@ import com.example.audio.Music;
 public class Game extends Activity{
 	
 	private String TAG = "Sudoku";
-	
 	public static String KEY_DIFFICULTY = "difficulty";
 	public static final int DIFFICULTY_EASY = 0;
 	public static final int DIFFICULTY_MEDIUM = 1;
@@ -49,7 +48,6 @@ public class Game extends Activity{
 		puzzleView = new PuzzleView(this);
 		setContentView(puzzleView);
 		puzzleView.requestFocus();
-		
 	}
 	/** 음악 */
 	@Override
